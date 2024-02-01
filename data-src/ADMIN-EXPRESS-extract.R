@@ -10,3 +10,4 @@ file.rename(from = file.path(dest, "ADMIN-EXPRESS_3-2__SHP_LAMB93_FXX_2023-12-19
 files <- list.files("data/ADE-3-2", full.names = TRUE)
 keep <- grep("[^_](REGION|COMMUNE)\\.[a-z]{3}$", files, value = TRUE)
 setdiff(files, keep) |> unlink(force = TRUE)
+
